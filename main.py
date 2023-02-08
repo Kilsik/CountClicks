@@ -4,7 +4,6 @@ import requests
 from urllib.parse import urlsplit
 from dotenv import load_dotenv
 
-load_dotenv()
 
 def get_args():
     parser = argparse.ArgumentParser(description='Создание коротких ссылок и подсчет кликов')
@@ -40,6 +39,7 @@ def is_bitlink (token, url):
 
 
 def main():
+    load_dotenv()
     token = os.environ['BITLY_TOKEN']
     args = get_args()
     input_url = args.url
