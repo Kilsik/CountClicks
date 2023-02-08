@@ -8,8 +8,8 @@ from dotenv import load_dotenv
 def get_args():
     parser = argparse.ArgumentParser(description='Создание коротких ссылок и подсчет кликов')
     parser.add_argument("url", help="Ваша ссылка")
-    namespace = parser.parse_args()
-    return namespace
+    arguments = parser.parse_args()
+    return arguments
 
 def shorten_link (token, url):
     api_url = 'https://api-ssl.bitly.com/v4/bitlinks'
