@@ -1,20 +1,18 @@
 # Обрезка ссылок с помощью Битли и подсчет кликов для них
 
-[TODO: Для работы необходимо зарегистрироваться на [Битли](https://bit.ly/) и получить [токен](https://bitly.com/a/oauth_apps)
-вида 17c09e20ad155405123ac1977542fecf00231da7. Его нужно сохранить в файле .env в корне проекта с именем BITLY_TOKEN:
-BITLY_TOKEN=17c09e20ad155405123ac1977542fecf00231da7
+Для работы необходимо зарегистрироваться на [Битли](https://bit.ly/) и получить [токен](https://bitly.com/a/oauth_apps)
+вида `17c09e20ad155405123ac1977542fecf00231da7`. Его нужно сохранить в файле .env в корне проекта с именем BITLY_TOKEN:
+```BITLY_TOKEN=17c09e20ad155405123ac1977542fecf00231da7```
 
 Пример работы утилиты:
 
-'''
-C:\Users\user\Desktop\Devman\CountClicks>python main.py https://jenyay.net/Programming/Argparse
+```
+>> python main.py https://jenyay.net/Programming/Argparse
 Битлинк:  https://bit.ly/3JOhBIL
-'''
 
-'''
-C:\Users\user\Desktop\Devman\CountClicks>python main.py https://bit.ly/3JOhBIL
-Количество кликов:  0]
-'''
+>> python main.py https://bit.ly/3JOhBIL
+Количество кликов:  0
+```
 
 #### Как установить
 
@@ -27,4 +25,4 @@ pip imstall -r requirements.txt
 
 Рекомендуется использовать [virtualenv/venv](https://docs.python.org/3/library/venv.html) для изоляции проекта.
 
-### Код написан в образовательных целях на онлайн-курсах школы [Devman](https://dvmn.org/)
+ Код написан в образовательных целях на онлайн-курсах школы [Devman](https://dvmn.org/)
