@@ -26,7 +26,7 @@ def count_clicks (token, url):
     split_url = urlsplit(url)
     full_url = f'{api_url}/{split_url.netloc}{split_url.path}/clicks/summary'
     response = requests.get(full_url, headers=headers)
-    response.rais_for_status()
+    response.raise_for_status()
     return response.json()['total_clicks']
 
 
